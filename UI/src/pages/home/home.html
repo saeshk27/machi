@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-navbar>
+    <ion-avatar>
+        <img class="machi-image"src="./assets/MACHI-logowithouDesc-.jpg">
+      </ion-avatar>
+    <button ion-button (click)="performance()">Performance Dashboard</button>
+   </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item >
+      
+
+        <ion-grid>
+            <ion-row>
+                <ion-col size="1" class="highlighter">
+                  Project Details
+                </ion-col>
+              </ion-row>
+              <ion-row>  
+              <ion-col size="4">
+                Project Name
+              </ion-col>
+              <ion-col size="4">
+                  {{projName}}
+              </ion-col>
+            </ion-row>
+            <ion-row>  
+              <ion-col size="4">
+                Current Sprint Name
+              </ion-col>
+              <ion-col size="4">
+                  {{currentSprint}}
+              </ion-col>
+            </ion-row>
+            <ion-row>  
+                <ion-col size="4">
+                  Scrum Master
+                </ion-col>
+                <ion-col size="4">
+                    MACHI - AI
+                </ion-col>
+            </ion-row>
+            <ion-row>  
+                <ion-col size="4">
+                  Product Owner
+                </ion-col>
+                <ion-col size="4">
+                    {{productOwner}}
+                </ion-col>
+            </ion-row>
+            <ion-row>  
+              <ion-col size="4">
+                  Standup Time
+              </ion-col>
+              <ion-col size="4">
+                  {{dailyStandupTime}}
+                  <button ion-button (click)="dailySprint()">Join Standup</button>
+              </ion-col>
+            </ion-row>
+            <ion-row>  
+              <ion-col size="4">
+                  Backlog Grooming
+              </ion-col>
+              <ion-col size="4">
+                  {{backlogGrooming | date: "dd/MM/yyyy HH:mm a"}} 
+                  <button ion-button (click)="backloggrooming()">Join Backlog Grooming</button>
+              </ion-col>
+            </ion-row>
+            <ion-row>  
+                <ion-col size="4">
+                    Sprint Start Date
+                </ion-col>
+                <ion-col size="4">
+                    {{sprintStartDate | date: "dd/MM/yyyy HH:mm a"}}
+                </ion-col>
+              </ion-row>
+              <ion-row>  
+                <ion-col size="4">
+                    Sprint End Date
+                </ion-col>
+                <ion-col size="4">
+                    {{sprintEndDate | date: "dd/MM/yyyy HH:mm a"}}
+                    <button ion-button (click)="sprintplanning()">Join Sprint Discussion</button>
+                </ion-col>
+              </ion-row>
+          </ion-grid>
+
+          <ion-row>
+              <ion-col size="1" class="highlighter">
+                Last standup meeting minutes
+              </ion-col>
+            </ion-row>
+          <ion-row>
+              <ion-col size="1" class="highlighter">
+              </ion-col>
+              <ion-col size="1"  class="highlighter">
+                Past Day(s)
+              </ion-col>
+              <ion-col size="1"  class="highlighter">
+                 Future  Day(s)
+               </ion-col>
+               <ion-col size="1"  class="highlighter">
+                  Impedements, if any?
+                </ion-col>
+            </ion-row>
+          
+              <ion-row *ngFor="let row of grid">
+                  <ion-col size="1">
+                
+                      {{row.fullName}}
+                      
+                    </ion-col>
+                <ion-col  *ngFor="let col of row.meetingNotes.reverse()">
+                  
+                        {{col.meetingMinutes}}
+                     </ion-col>
+              </ion-row>
+            
+
+
+        
+    </ion-item>
+
+   
+    
+  
+      
+
+       
+            
+          
+    
+  </ion-list>
+</ion-content> 

@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Genesys\\Machi\\Repo\\machi\\ML\\machi-server\\model.tflearn"
+all_model_checkpoint_paths: "C:\\Genesys\\Machi\\Repo\\machi\\ML\\machi-server\\model.tflearn"

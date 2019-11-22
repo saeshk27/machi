@@ -1,0 +1,11 @@
+*.class 
+*/target/*
+*/.settings/*
+.classpath
+UI/resources/
+UI/www/
+UI/node_modules/
+.idea/*
+ML/*/.idea/*
+ML/*/tflearn_logs/*
+ML/machi-client/*.mp3

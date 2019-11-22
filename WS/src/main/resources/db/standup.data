@@ -1,0 +1,15 @@
+st01,proj1,1,sp1,PAST,I was working on Task M1
+st02,proj1,1,sp1,NEXT,I will be working on Task M2
+st03,proj1,1,sp1,IMPEDIMENT,No
+st04,proj1,2,sp1,PAST,I was working on Task M21
+st05,proj1,2,sp1,NEXT,I will be working on Task M22
+st06,proj1,2,sp1,IMPEDIMENT,No
+st07,proj1,3,sp1,PAST,I was working on Task M11
+st08,proj1,3,sp1,NEXT,PTO
+st09,proj1,3,sp1,IMPEDIMENT,No
+st10,proj1,4,sp1,PAST,Working on Task M31
+st11,proj1,4,sp1,NEXT,Will be continuing to work on Task M31
+st12,proj1,4,sp1,IMPEDIMENT,No
+st13,proj1,5,sp1,PAST,I was working on Task M11
+st14,proj1,5,sp1,NEXT,I was working on Task M11
+st15,proj1,5,sp1,IMPEDIMENT,Waiting for Tester to start testing

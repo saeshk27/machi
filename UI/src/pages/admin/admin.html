@@ -1,0 +1,55 @@
+<ion-header>
+                <ion-toolbar>
+                  <ion-title>
+                   Performance Dashboard 
+                  </ion-title>
+                  <button ion-button (click)="ScrumCoach()">Scrum Coach</button>
+                </ion-toolbar>
+              </ion-header>
+              
+              <ion-content>
+                <div class="ion-padding">
+                    <div class="ion-padding">
+                  <ion-card>
+                    <ion-card-header>
+                      No of tickets of the team
+                    </ion-card-header>
+                    <ion-card-content>
+                      <canvas #barCanvas></canvas>
+                    </ion-card-content>
+                  </ion-card>
+                  </div>
+
+                  <ion-row>  
+                      <ion-col size="4">
+                          <ion-card>
+                              <ion-card-header>
+                                Scores of the team
+                              </ion-card-header>
+                              <ion-card-content>
+                                <canvas #doughnutCanvas></canvas>
+                              </ion-card-content>
+                            </ion-card>
+                      </ion-col>
+                      <ion-col size="4">
+                          <ion-card>
+                              <ion-card-header>
+                                My Ticket Details
+                              </ion-card-header>
+                              <ion-card-content>
+                                <canvas #doughnutCanvasUser></canvas>
+                              </ion-card-content>
+                            </ion-card>
+                      </ion-col>
+                    </ion-row>
+              
+                  <ion-card>
+                    <ion-card-header>
+                      Performance Graph
+                    </ion-card-header>
+                    <ion-card-content>
+                      <canvas #lineCanvas></canvas>
+                    </ion-card-content>
+                  </ion-card>
+                </div>
+              </ion-content>

@@ -1,0 +1,67 @@
+.ios, .md {
+
+    login-page {
+
+        ion-content {
+            background-color: #ffffff;
+        }
+
+        scroll-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        ion-row {
+            align-items: center;
+            text-align: center;
+        }
+
+        ion-item {
+            border-radius: 30px !important;
+            padding-left: 10px !important;
+            margin-bottom: 10px;
+            background-color: #f6f6f6;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+
+        ion-list {
+            margin: 0;
+        }
+
+        .login-logo {
+            flex: 2;
+        }
+
+        .login-form {
+            flex: 1;
+            width: 400px;
+            margin: 230px auto;
+        }
+
+        .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+            border-bottom-color:#ff7300;
+            box-shadow:inset 0 -1px 0 0 #ff7300;
+        }
+
+        .create-account {
+            color: #fff;
+            text-decoration: underline;
+            background: #e05809;
+        }
+
+        .login-button {
+            border-radius: 30px;
+            font-size: 0.9em;
+            background-color: #e05809;
+            border: 1px solid #fff;
+        }
+
+        .login-header {
+            background-color: #e05809;
+            border: 1px solid #fff;
+        }
+
+    }
+
+}
